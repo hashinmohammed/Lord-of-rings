@@ -90,11 +90,6 @@ function App() {
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
         filteredCharacters={filteredCharacters}
-        selectedGender={selectedGender}
-        setSelectedGender={setSelectedGender}
-        searchFilter={searchFilter}
-        setNameSort={setNameSort}
-        nameSort={nameSort}
         setCharactersPerPage={setCharactersPerPage}
         charactersPerPage={charactersPerPage}
         totalCharactersInDb={totalCharactersInDb}

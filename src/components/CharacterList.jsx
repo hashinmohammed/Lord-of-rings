@@ -50,6 +50,8 @@ const CharacterList = ({
           flexDirection: "row",
         }}
       >
+        <LimitCharacter setCharactersPerPage={setCharactersPerPage} />
+
         <Pagination
           currentPage={currentPage}
           totalPages={Math.ceil(totalCharactersInDb / charactersPerPage)}
@@ -58,7 +60,6 @@ const CharacterList = ({
           charactersPerPage={charactersPerPage}
           totalCharacters={totalCharactersInDb}
         />
-        <LimitCharacter setCharactersPerPage={setCharactersPerPage} />
       </div>
 
       {isModalOpen && (
