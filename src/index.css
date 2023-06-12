@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body{
+  background-image: linear-gradient(to right, #FFF, #d7d7f4)
+} */
+/* CSS for custom scrollbar */
+/* Note: This code uses CSS Scrollbar for Webkit browsers */
+
