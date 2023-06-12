@@ -25,7 +25,7 @@ const Pagination = ({
   );
 
   return (
-    <div className="flex justify-center" style={{ padding: 20 }}>
+    <div className=" flex justify-center" style={{ padding: 20 }}>
       <button
         className="py-2 px-4 rounded-md mr-2 shadow-md"
         onClick={onPreviousPage}
@@ -33,17 +33,17 @@ const Pagination = ({
       >
         <FcPrevious />
       </button>
-      {pages.map((pageNumber) => (
-        <button
-          key={pageNumber}
-          className={`text-slate-700 py-2 px-4 rounded-[50%] mx-2 ${
-            currentPage === pageNumber ? "bg-[#ED4576]" : ""
-          }`}
-          onClick={() => onPageChange(pageNumber)}
-        >
-          {pageNumber}
-        </button>
-      ))}
+      {/* {pages.map((pageNumber) => ( */}
+      <button
+        // key={pageNumber}
+        className={`text-slate-700 py-2 px-4 rounded-[50%] mx-2 ${
+          currentPage === currentPage ? "bg-[#ED4576]" : ""
+        }`}
+        // onClick={() => onPageChange(currentPage)}
+      >
+        {currentPage}
+      </button>
+      {/* ))} */}
       <button
         className="py-2 px-4 rounded-md mr-2 shadow-md"
         onClick={onNextPage}
